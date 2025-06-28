@@ -1,0 +1,135 @@
+/* Main container */
+.cartitems {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #fce3ec, #ffe9e3);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Header row */
+  .cartitems-format-main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #ffd6e0;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    color: #4a148c;
+  }
+  
+  /* Each item row */
+  .cartitems-format {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    color: #333;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+  
+  .cartitems-format:hover {
+    background-color: #fce4ec;
+  }
+  
+  /* Product image */
+  .carticon-product-icon {
+    width: 60px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Quantity button */
+  .cartitems-quantity {
+    padding: 8px 12px;
+    background-color: #ce93d8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  /* Remove icon */
+  .remove-icon {
+    width: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .remove-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Total section */
+  .cartitems-total {
+    margin-top: 30px;
+    background-color: #ffe0f0;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: right;
+    font-size: 18px;
+    color: #6a1b9a;
+  }
+  
+  .cartitems-total h2, 
+  .cartitems-total h3 {
+    margin: 5px 0;
+  }
+  
+  /* Coupon and checkout */
+  .cartitems-checkout-box {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cartitems-checkout-box input.coup {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #ba68c8;
+    border-radius: 10px;
+    background-color: #f3e5f5;
+    text-align: center;
+    min-width: 250px;
+  }
+  
+  /* Buttons */
+  .apply-btn,
+  .checkout-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .apply-btn {
+    background-color: #ab47bc;
+  }
+  
+  .apply-btn:hover {
+    background-color: #8e24aa;
+  }
+  
+  .checkout-btn {
+    background-color: #00bfa5;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #008e76;
+  }
+  

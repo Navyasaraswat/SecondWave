@@ -1,0 +1,113 @@
+/* ShopCategory.css */
+
+.ShopCategory {
+    width: 100%;
+    background: linear-gradient(to right, #617cda, #4c60a3d0);
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .ShopCategory img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .ShopCategory-indexsort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px auto;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  .ShopCategory-sort {
+    background: white;
+    color: #ff5e62;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.2rem;
+  }
+  
+  .ShopCategory-sort:hover {
+    background: #ff5e62;
+    color: white;
+  }
+  
+  .ShopCategory-products {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+    align-items: center;
+  }
+  
+  .ShopCategory-products .Item {
+    width: 98%;
+    max-width: 1000px;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .ShopCategory-products .Item img {
+    width: 220px;
+    height: 220px;
+    border-radius: 14px;
+    object-fit: cover;
+  }
+  
+  .ShopCategory-products .Item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .ShopCategory-products .Item-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .ShopCategory-products .Item-prices {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+  
+  .ShopCategory-products .Item-old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1.4rem;
+  }
+  
+  .ShopCategory-products .Item-new-price {
+    font-weight: bold;
+    color: #a5199c;
+    font-size: 1.7rem;
+  }
+  
+  .ShopCategory-products .Item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }

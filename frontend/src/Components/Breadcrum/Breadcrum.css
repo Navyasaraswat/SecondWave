@@ -1,0 +1,22 @@
+/* Breadcrum.css */
+
+.Breadcrum {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.95rem;
+    color: #555;
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .Breadcrum img {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    opacity: 0.6;
+  }
+  

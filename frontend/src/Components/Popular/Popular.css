@@ -1,0 +1,87 @@
+.Popular {
+    display: flex;
+    background: radial-gradient(circle, #92c7fc 20%, #b4d6fa 60%, #e1ffea22 100%);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+    width: 100%;
+}
+
+/* 🏷️ Heading Styling */
+.Popular h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 🔲 Stylish Separator Line */
+.Popular hr {
+    width: 150px;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6363;
+    margin-bottom: 40px;
+}
+
+/* 🔥 Popular Items Row */
+.popular-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Equal columns */
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* 🎨 Item Card Styling */
+.Item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 🖼️ Uniform Image Size */
+.Item img {
+    width: 100%;
+    height: 300px; /* Ensuring equal height */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 🛒 Item Card Hover Effect */
+.Item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+    .Popular h1 {
+        font-size: 40px;
+    }
+
+    .popular-item {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .Popular h1 {
+        font-size: 32px;
+    }
+
+    .Popular hr {
+        width: 100px;
+        height: 4px;
+    }
+
+    .popular-item {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

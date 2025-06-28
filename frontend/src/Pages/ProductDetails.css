@@ -1,0 +1,42 @@
+.product-details {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .product-image {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-info {
+    max-width: 600px;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .new-price {
+    color: green;
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  
+  .old-price {
+    color: gray;
+    text-decoration: line-through;
+  }
+  
+  .buy-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  

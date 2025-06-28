@@ -1,0 +1,118 @@
+.offers {
+    width: 80%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centering content */
+    margin: auto;
+    padding: 50px 80px;
+    margin-bottom: 100px;
+    background: radial-gradient(circle, #6aa9ff 10%, #a3d0ff 50%, #f0f9ff 100%);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center; /* Ensures text alignment is more central */
+}
+
+/* 🎈 Left Content */
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Moves text toward center */
+    gap: 15px;
+    padding-left: 30px; /* Slight shift towards the center */
+}
+
+/* 🏷️ Offer Heading */
+.offers-left h1 {
+    color: #171717;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* 📜 Offer Description */
+.offers-left p {
+    color: #444;
+    font-size: 19px;
+    font-weight: 500;
+    max-width: 85%;
+}
+
+/* 🎯 Call-To-Action Button */
+.offers-left button {
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.3);
+}
+
+.offers-left button:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    transform: scale(1.05);
+}
+
+/* 📸 Right Side Image */
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.offers-right img {
+    width: 70%; /* Further reduced from 75% */
+    max-width: 350px; /* Reduced slightly */
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+    .offers {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 50px 40px;
+    }
+
+    .offers-left {
+        padding-left: 0; /* Reset for smaller screens */
+    }
+
+    .offers-left h1 {
+        font-size: 48px;
+    }
+
+    .offers-left p {
+        font-size: 17px;
+    }
+
+    .offers-left button {
+        width: 220px;
+        height: 55px;
+        font-size: 17px;
+    }
+
+    .offers-right {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .offers-right img {
+        width: 65%;
+        max-width: 280px;
+    }
+}

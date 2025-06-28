@@ -1,0 +1,28 @@
+/* RelatedProducts.css */
+
+.relatedproducts {
+    padding: 2rem;
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .relatedproducts h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .relatedproducts hr {
+    border: none;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin-bottom: 2rem;
+    width: 100px;
+  }
+  
+  .relatedproducts-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  

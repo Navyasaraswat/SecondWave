@@ -1,0 +1,38 @@
+.Item {
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth effect */
+}
+
+.Item p {
+    margin: 6px 0px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.item-prices {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.item-prices-new {
+    color: #8a2be2; /* Brighter blueviolet */
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.item-prices-old {
+    color: #606c88; /* Softer blue-gray */
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.Item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}

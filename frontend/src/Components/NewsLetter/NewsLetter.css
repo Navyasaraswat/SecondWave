@@ -1,0 +1,105 @@
+/* 📩 NewsLetter Section */
+.NewsLetter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #2c5291, #7996cd);
+    padding: 60px 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin: 50px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* 🏷️ Heading */
+.NewsLetter h1 {
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 600px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* 📝 Subtitle */
+.NewsLetter p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* 📧 Input & Button Container */
+.NewsLetter div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* ✉️ Email Input Field */
+.NewsLetter input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    width: 70%;
+    max-width: 300px;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* 🚀 Subscribe Button */
+.NewsLetter button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #2a0a60;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.NewsLetter button:hover {
+    background: #ff4b2b;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .NewsLetter {
+        padding: 40px 20px;
+    }
+
+    .NewsLetter h1 {
+        font-size: 28px;
+    }
+
+    .NewsLetter p {
+        font-size: 16px;
+    }
+
+    .NewsLetter div {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .NewsLetter input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .NewsLetter button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
